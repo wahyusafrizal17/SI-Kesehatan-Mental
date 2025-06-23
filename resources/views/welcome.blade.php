@@ -13,7 +13,7 @@
         <h2><span>Selamat datang di </span><span class="accent">Tellus</span></h2>
         <p>Kami membantu kamu menjaga kesehatan mental melalui pemantauan suasana hati, edukasi, dan konsultasi dengan profesional.</p>
         <div class="d-flex">
-          <a href="#cek-mood" class="btn-get-started">Cek Mood Hari Ini</a>
+          <a href="{{ route('kesehatan-mental.index') }}" class="btn-get-started">Cek Kesehatan Mental</a>
         </div>
       </div>
       <div class="col-lg-5 order-1 order-lg-2">
@@ -26,37 +26,37 @@
     <div class="container position-relative">
       <div class="row gy-4 mt-5">
 
-        <div class="col-xl-3 col-md-6">
+        <div class="col-xl-4 col-md-6">
           <div class="icon-box">
             <div class="icon"><i class="bi bi-emoji-smile"></i></div>
             <h4 class="title">
-              <a href="#cek-mood" class="stretched-link">Cek Mood</a>
+              <a href="{{ route('kesehatan-mental.index') }}" class="stretched-link">Cek Kesehatan Mental</a>
             </h4>
             <p class="text-white-50">Lacak dan catat perasaanmu setiap hari.</p>
           </div>
         </div>
 
-        <div class="col-xl-3 col-md-6">
+        <div class="col-xl-4 col-md-6">
           <div class="icon-box">
             <div class="icon"><i class="bi bi-person-lines-fill"></i></div>
             <h4 class="title">
-              <a href="#konsultasi" class="stretched-link">Konsultasi</a>
+              <a href="{{ route('konsultasi.index') }}" class="stretched-link">Konsultasi</a>
             </h4>
             <p class="text-white-50">Buat janji atau konsultasi dengan konselor.</p>
           </div>
         </div>
 
-        <div class="col-xl-3 col-md-6">
+        <div class="col-xl-4 col-md-6">
           <div class="icon-box">
             <div class="icon"><i class="bi bi-journal-text"></i></div>
             <h4 class="title">
-              <a href="#artikel" class="stretched-link">Artikel Edukasi</a>
+              <a href="{{ route('artikel.index') }}" class="stretched-link">Artikel</a>
             </h4>
             <p class="text-white-50">Baca artikel seputar stres, kecemasan, dan lainnya.</p>
           </div>
         </div>
 
-        <div class="col-xl-3 col-md-6">
+        {{-- <div class="col-xl-3 col-md-6">
           <div class="icon-box">
             <div class="icon"><i class="bi bi-clipboard-check"></i></div>
             <h4 class="title">
@@ -64,7 +64,7 @@
             </h4>
             <p class="text-white-50">Ikuti tes mandiri untuk memahami kondisimu.</p>
           </div>
-        </div>
+        </div> --}}
 
       </div>
     </div>
